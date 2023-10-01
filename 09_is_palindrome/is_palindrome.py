@@ -21,3 +21,8 @@ def is_palindrome(phrase):
         >>> is_palindrome('Noon')
         True
     """
+    clean_phrase = ''.join()
+    
+    return clean_phrase == clean_phrase[::-1]
+
+print(is_palindrome('robert')) 
