@@ -16,3 +16,18 @@ def friend_date(a, b):
         >>> friend_date(sauron, gandalf)
         True
     """
+    hobbies_a = a[2]
+    hobbies_b = b[2]
+    
+    common_hobbies = set(hobbies_a).intersection(hobbies_b)
+
+    
+    if common_hobbies:
+        return True
+    else:
+        return False
+    
+elmo = ('Elmo', 5, ['hugging', 'being nice'])
+sauron = ('Sauron', 5000, ['killing hobbits', 'chess'])
+
+print(friend_date(elmo, sauron))
